@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura curso CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f5d2cc4719.js" crossorigin="anonymous"></script>
+<body>
+<header>
+    <nav class="menu">
+        <ul>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contato">Contato</a></li>
+</ul>
+</nav>
+<div class="titulo">
+    <h1 class="site-title"> Luiz Felipe Nery de Souza</h1>
+    <h2 class="site-subtitle">Jr. Front-end developer</h2>
+    </div>
+</header>
+<section class="sobre container">
+<h2>Sobre</h2>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+<figure class="foto">
+    <img src="lfelipe.jpg" alt="Luiz Felipe Nery De Souza">
+</figure>
+<p>
+    Olá, como vai? 
+    Seja bem-vindo ao meu portfólio.    
+</p>
+
+<p>
+Meu nome é Luiz e eu tenho 31 anos, sempre gostei de tecnologia e acompanho como sua evolução vêm agregando cada vez mais com o decorrer do tempo.
+</p>
+
+ <p>
+Me formei em Administração com Comércio Exterior e fiz um MBA em Gestão de Negócios pela FGV, onde aprendi muito e cresci muito profissionalmente, conhecimentos esses que levarei para a vida.
+ </p>
+ <p>
+Tenho um círculo social composto por muitas pessoas de tecnologia e essa proximidade me fez ter cada vez mais interesse pela área, até que em um momento, decidi me aventurar e iniciei um curso de programação, eu gostei muito e decide me aprofundar nesses conhecimentos.
+</p>
+<p>
+    Estou estudando no momento as tecnologias voltadas para o front-end através de cursos pela Udemy e vídeos no Youtube. Abaixo pode notar as tecnologias em que estou interessado e estudando.
+</p>
+
+</section>
+<section class="portfolio container" id="portfolio">
+    <h2>Portfolio</h2><br>
+    <div class="caixa">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+        <div class="flip">
+        <div class="card">
+    <figure class="frente">
+      <img class="img-portfolio" src="ecommerce.jpg" alt="ecommerce">
+      <figcaption>Business</figcaption>
+    </figure>
+    <div class="tras">
+    Com Bacharel em Administração e MBA em gestão de negócios.
+    Tenho solida experiencia para lidar com clientes e suas necessidades.
+    Com certeza os conhecimentos adquirido de outra area serão bem aproveitado.
+</div>
+</div>
+</div>
+<div class="flip">
+<div class="card">
+    <figure class="frente">
+      <img class="img-portfolio" src="skill.jpg" alt="Solf Skills">
+      <figcaption>Soft Skills</figcaption>
+    </figure>
+    <div class="tras">
+        Gosto de aprender, aprendo rapido, fácil convivio, gosto de ajuda, resolver problemas, sempre aberto a novos desafios.
+
+    </div>
+</div>
+    </div>
+
+    <div class="flip">
+<div class="card">
+    <figure class="frente">
+      <img class="img-portfolio" src="web.jpg" alt="web">
+      <figcaption>Cursos Back-End</figcaption>
+    </figure>
+    <div class="tras">
+Linguagem Java, Estrutura sequencial/condicional/repetitiva, programação orientada a objetos, Construtores, Comportamento de Memória, Git, Enumeração, Conposição,
+herança e polimorfismo, tratamento de excessão, Interfaces, Generics/Set/Map, Lambda, JavaFX, Banco de dados,MySQL,JDBC,
+    </div>
+</div>
+</div>
+
+<div class="flip">
+<div class="card">
+    <figure class="frente">
+      <img class="img-portfolio" src="projeto.jpg" alt="projeto">
+      <figcaption>Cursos Front-End</figcaption>
+    </figure>
+    <div class="tras">
+        Javascript:ECMAScript 6, 7, 8, Angular 9, React, Vue, Node, HTML, CSS, jQuery, Bootstrap Webpack Gulp MySQL
+        Ajax ,Gulp, VueJS, Electron, Banco Relacional, Express, MySQL, Postgres e MongoDB
+            </div>
+        </div>
+        </div>
+        
+  </section>
+
+  </section><br><br><br><br><br>    
+<section class="contato container" id="contato">
+  <h2>Contato</h2>
+	<div class="grid icons">
+    <a target="_blank" href="https://github.com/lfelipenery">
+        <i class="fab fa-github"></i>
+    </a>
+    <a target="_blank" href="https://www.instagram.com/lfelipenerys/?hl=pt-br">
+        <i class="fab fa-instagram-square"></i>
+    </a>
+    <a target="_blank" href="https://www.linkedin.com/in/luizfelipenery/">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:lfelipenery@gmail.com">
+        <i class="fas fa-envelope-square"></i>
+    </a>
+  </div>
+</section>
+<style> 
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+    body {
+        background-image: url('portifolio.jpg');
+        font-family: Arial;
+        background-size: auto 150vh;
+        background-position: initial ;
+        
+    }
+
+@media (min-width: 400px){
+    body {
+        font-size: 14px;
+    }
+
+    @media (min-width: 1200px){
+    body {
+        font-size: 18px;
+    }
+}
+
+.contato,
+.sobre,
+.portfolio {
+    padding: 2em;
+    min-width: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Caveat', cursive;
+    font-size: 6mm;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+  
+}
+
+
+}
+
+    header {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: initial;
+    }
+    .menu {
+        background:black;
+        position: fixed;
+        width: 100vw;
+        top:0;
+        z-index: 1;
+    }
+    a:hover {
+        text-decoration: initial;
+    }
+
+    .titulo {
+        transform: scale(0.2) translateY(50vh);
+        opacity: 0;
+        animation: 0.5s linear 2s animaTitulo forwards;
+
+    }
+
+    @keyframes animaTitulo {
+        from{  
+            transform: scale(0.2) translateY(50vh);
+        opacity: 0;
+            }
+            to {transform: scale(1) translateY(0);
+        opacity: 1;
+
+            }
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-between;
+        border-radius: 30%;
+    }
+    .menu li {
+        list-style: none;
+        border-radius: 30%;
+    }
+
+    .menu a {
+       display: block;
+       padding: 10px 20px;
+       transition: background-color 1s, color 1s;
+       border-radius: 30%;
+
+    }
+    .menu a:active,
+    .menu a:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+
+    }
+    .menu a:active{
+        background-color: blue;
+        color: white;
+    }
+    
+    a {
+        color:rgb(255, 255, 255);
+        text-decoration: none;
+        
+    }
+
+    .sobre a {
+        color: blue;
+    }
+
+    .sobre .foto {
+        float: right;
+        margin-left: 1.5em;
+
+    }
+
+    .sobre .foto img{
+        clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+
+    }
+    .site-subtitle,
+    .site-title {
+        color:black;
+        text-align: center;
+
+    }
+
+    .site-title {
+        font-size: 4em;
+        font-family: 'Bangers', cursive;
+    }
+    .site-subtitle {
+        font-style: italic;
+        font-family: 'Bangers', cursive;
+    }
+    .img-portfolio {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        border-radius: 30%;
+        padding: 2em;
+        margin-bottom: 1.3em;
+    object-position: left;
+    transition: transform 1s;
+   }
+
+   .flip{
+perspective: 500px;
+   }
+
+.card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    font-family: 'Caveat', cursive;
+    font-size: 7mm;
+    
+}
+
+.flip:hover .card{
+    transform: rotateY(180deg);
+}
+   .frente,
+   .tras {
+       position: absolute;
+       left: 0;
+       top: 0;
+       backface-visibility: hidden;
+   }
+
+   .tras{
+       height: 100px;
+       width: 100%;
+       transform: rotateY(180deg);
+   }
+
+   .img-portfolio:hover {
+    transform: scale(1.3);
+   }
+
+    figure {
+        font-family: 'Bangers', cursive;
+        text-align: center;
+    }
+    .sobre .h2,
+    .contato .h3,
+    h2 {
+        font-family: 'Bangers', cursive;
+        color: rgb(0, 0, 0);
+        margin-bottom: 1.5em;
+        font-size: 2em;
+    }
+
+ p {
+text-indent: 1.3em;
+margin-bottom: 1.4em;
+text-align: justify;
+}
+
+ i{
+    color:rgb(10, 10, 10);
+    font-size: 4em;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    
+}
+
+.contato a:hover{
+    text-decoration: none;
+    text-shadow: -10px -10px 80px rgb(255, 0, 0);
+    transition: text-shadow 1s;
+
+
+}
+
+    .caixa {
+display: grid;
+gap: 2em;
+grid-template-columns: 240px 240px 240px 240px;
+}
+
+@media (min-width: 560px) {
+    .caixa{
+        grid-template-columns: 240px 240px 240px;
+    }
+}
+
+@media (min-width: 880px) {
+    .caixa{
+        grid-template-columns: 240px 240px 240px 240px;
+        align-content: initial;
+        justify-content:  center;
+        height: calc(100vh - 15em - 48px );
+    }
+}
+
+@media (min-width: 1200px ) {
+    img-portfolio {
+        height: auto;
+        width: 100%;
+    }
+}
+
+    </style>
+</body>
+</html>
